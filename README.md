@@ -1,5 +1,7 @@
 # ToDoList in React
 
+![Logo](/public/To-Do-List.png)
+
 Basic todolist in react onepage
 
 
