@@ -8,7 +8,7 @@ export const TodoForm = ({ addTodo }) => {
         e.preventDefault();
 
         if (value.trim() === "") {
-            setErrorMessage("Veuillez saisir un message.");
+            setErrorMessage("Please enter a message.");
         } else {
             addTodo(value);
             setValue("");
