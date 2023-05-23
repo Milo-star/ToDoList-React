@@ -1,6 +1,8 @@
 # ToDoList in React
 
 ![Logo](/public/To-Do-List.png)
+![Logo](/public/Error.png)
+
 
 Basic todolist in react onepage
 
