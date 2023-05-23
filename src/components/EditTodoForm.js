@@ -1,15 +1,21 @@
 import React, {useState} from 'react';
 
 export const EditTodoForm = ({editTodo, task}) => {
-    const [value, setValue] = useState("")
+    const [value, setValue] = useState("");
+    const [errorMessage, setErrorMessage] = useState("");
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        editTodo(value, task.id)
+        if (value.trim() === "") {
+            setErrorMessage("Please enter a message.");
+        } else {
+            editTodo(value, task.id)
+            setValue("");
+            setErrorMessage("");
+        }
+    };
 
-        setValue("")
-    }
 
     return (
         <form className='TodoForm' onSubmit={handleSubmit}>
@@ -22,6 +28,7 @@ export const EditTodoForm = ({editTodo, task}) => {
             />
 
             <button type='submit' className='todo-btn'>Update Task</button>
+            {errorMessage && <p className="error-message">{errorMessage}</p>}
         </form>
     )
 }
