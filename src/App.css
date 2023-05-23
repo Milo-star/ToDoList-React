@@ -41,7 +41,7 @@ h1 {
   border: 1px solid #8758ff;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   width: 300px;
   color: #fff;
 }
@@ -78,4 +78,10 @@ h1 {
 .completed {
   color: #c5aeff;
   text-decoration: line-through;
+}
+
+.error-message {
+  color: red;
+  margin: 1rem;
+  margin-top: 0;
 }
